@@ -1,0 +1,20 @@
+{
+  "num_docs": 1965,
+  "total_tokens": 1333777,
+  "avgdl": 678.7669211195929,
+  "num_terms": 37177,
+  "num_postings": 643611,
+  "index_bytes_on_disk": 24207134,
+  "build_seconds": 2.6446280479431152,
+  "preprocessing": {
+    "gap": 100,
+    "stopwords": "nltk english",
+    "boilerplate_threshold": null,
+    "tokenizer": "lowercase, whitespace split, edge punctuation stripped, letter-hyphen-letter split, NLTK stopwords removed"
+  },
+  "median_doc_length": 550,
+  "min_doc_length": 45,
+  "max_doc_length": 12844,
+  "mean_doc_length": 678.7669211195929,
+  "zero_length_docs": 0
+}

@@ -2,9 +2,13 @@ import json
 import collections
 import os
 import pickle
-from preprocess import  normalize_line, tokenize
+import statistics
 
+from preprocess import  normalize_line, tokenize
+import argparse
+import time
 indexFile = "index.pkl"
+
 def load_corpus(path): # -> list of page dicts
     count = 0
     recordedLines = []
@@ -128,16 +132,52 @@ def load_index(out_dir):
     with open(path, "rb") as file:
         return pickle.load(file)
 
-def main(): ...
+def main():
+    parser = argparse.ArgumentParser(description="Build the inverted index")
+    parser.add_argument("--corpus", default="data/corpus.jsonl", help="input corpus")
+    parser.add_argument("--out-dir", default="index", help="folder for the index file")
+    parser.add_argument("--stats-out", default="artifacts/index_stats.json")
+    parser.add_argument("--gap", type=int, default=100, help="title/body position gap")
+    parser.add_argument("--limit", type=int, default=None, help="index only the first N pages")
+    args = parser.parse_args()
+    start = time.time()
+    pages = load_corpus(args.corpus)
+
+    config = {
+        "gap" : args.gap,
+        "stopwords" : "nltk english",
+        "boilerplate_threshold" : None,
+        "tokenizer" : "lowercase, whitespace split, edge punctuation stripped, letter-hyphen-letter split, NLTK stopwords removed"
+    }
+
+    if args.limit:
+        pages = pages[:args.limit]
+
+    idx = build_index(pages, config)
+    path = save_index(idx, args.out_dir)
+    build_seconds = time.time()-start
+    lengths = [d["length"] for d in idx["docs"]]
+    report = {
+        "num_docs" : idx["stats"]["N"],
+        "total_tokens": idx["stats"]["total_tokens"],
+        "avgdl": idx["stats"]["avgdl"],
+        "num_terms": len(idx["postings"]),
+        "num_postings": sum(idx["stats"]["df"].values()),
+        "index_bytes_on_disk": os.path.getsize(path),
+        "build_seconds": build_seconds,
+        "preprocessing": config,
+        "median_doc_length": statistics.median(lengths),
+        "min_doc_length" : min(lengths),
+        "max_doc_length" : max(lengths),
+        "mean_doc_length": statistics.mean(lengths),
+        "zero_length_docs": sum(1 for n in lengths if n == 0)
+
+    }
+    print(report)
+
+    os.makedirs(os.path.dirname(args.stats_out), exist_ok= True)
+    with open(args.stats_out, "w", encoding="utf-8") as f:
+        json.dump(report, f, indent=2)
 
 if __name__ == "__main__":
-    pages = load_corpus("C:/Users/jonat/PycharmProjects/CorpusSearchEngine/artifacts/data/corpus.jsonl")
-
-    config = {"gap": 100}
-    A = {"title": "Financial Aid", "text": "Apply for financial aid at the office of the registrar."}
-    B = {"title": "Registrar", "text": "The registrar office handles registration and aid forms."}
-    C = {"title": "", "text": "Parking permits are sold at the office."}
-
-    for page in (A, B, C):
-        positions, length = index_document(page, config)
-        print(length, positions)
+    main()
