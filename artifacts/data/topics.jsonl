@@ -1,0 +1,55 @@
+{"qid": "t01", "query": "parking permit", "description": "A student wants to know how to buy a campus parking permit and what it costs."}
+{"qid": "t02", "query": "on campus housing options", "description": "A prospective student wants to compare the residence halls and living options on campus."}
+{"qid": "t03", "query": "housing", "description": "A student wants to apply for on-campus housing."}
+{"qid": "t04", "query": "FAFSA", "description": "A student wants to know how to file the FAFSA to receive financial aid at KSU, including deadlines or the school code."}
+{"qid": "t05", "query": "satisfactory academic progress financial aid", "description": "A student wants to know the grade and credit-hour requirements for keeping financial aid."}
+{"qid": "t06", "query": "academic calendar", "description": "A student wants the official calendar of semester dates, such as when classes start, drop/add, and finals."}
+{"qid": "t07", "query": "CCSE", "description": "A visitor wants the home page of the College of Computing and Software Engineering and an overview of its departments."}
+{"qid": "t08", "query": "computer science bachelor's degree", "description": "A prospective student wants an overview and the requirements of the B.S. in Computer Science."}
+{"qid": "t09", "query": "graduate admissions requirements", "description": "Someone applying to a master's program wants to know the application requirements and deadlines."}
+{"qid": "t10", "query": "international student undergraduate admission", "description": "An international applicant wants the requirements, such as English proficiency and documents, for undergraduate admission."}
+{"qid": "t11", "query": "transfer credit", "description": "A student at another college wants to know how their credits will transfer to KSU."}
+{"qid": "t12", "query": "credit by exam", "description": "A student wants to earn college credit through exams such as AP, IB, or CLEP."}
+{"qid": "t13", "query": "transient student", "description": "A student from another university wants to take courses at KSU temporarily and transfer them back."}
+{"qid": "t14", "query": "schedule a campus tour", "description": "A prospective student wants to book a campus visit or tour."}
+{"qid": "t15", "query": "freshman orientation", "description": "An incoming first-year student wants to know what orientation involves and how to register for it."}
+{"qid": "t16", "query": "meal plans", "description": "A residential student wants to know the meal plan options and where to eat on campus."}
+{"qid": "t17", "query": "library hours", "description": "A student wants to know when the library is open."}
+{"qid": "t18", "query": "interlibrary loan", "description": "A student wants to borrow a book or article that the KSU library does not own."}
+{"qid": "t19", "query": "how do I print in the library", "description": "A student wants to know how to print from a library computer and how printing is paid for."}
+{"qid": "t20", "query": "reserve a study room", "description": "A student wants to reserve a group study room in the library."}
+{"qid": "t21", "query": "submit a job on the HPC cluster", "description": "A researcher wants to know how to submit and run a batch job on KSU's high-performance computing cluster."}
+{"qid": "t22", "query": "Double Owl", "description": "A student wants to learn about Double Owl pathways, which combine a bachelor's and a master's degree."}
+{"qid": "t23", "query": "honors college admission", "description": "A high-achieving applicant wants to know how to get into the Honors College and what it offers."}
+{"qid": "t24", "query": "commencement", "description": "A graduating student wants information about the commencement ceremony, such as dates, tickets, and regalia."}
+{"qid": "t25", "query": "campus police", "description": "Someone wants contact information and services of the KSU police department."}
+{"qid": "t26", "query": "Clery Act annual security report", "description": "Someone wants KSU's annual campus crime and safety report published under the Clery Act."}
+{"qid": "t27", "query": "UITS", "description": "A student wants the university IT services department to get technical help."}
+{"qid": "t28", "query": "reset NetID password", "description": "A student locked out of their account wants to reset their NetID password."}
+{"qid": "t29", "query": "internships and career help for students", "description": "A student wants help finding internships or preparing for a job search."}
+{"qid": "t30", "query": "tuition refund", "description": "A student who dropped classes wants to know whether and when tuition will be refunded."}
+{"qid": "t31", "query": "tuition and fees", "description": "A student wants to know how much tuition and fees cost per semester."}
+{"qid": "t32", "query": "scholarships for incoming freshmen", "description": "A high school senior wants to know which scholarships are available and how to apply."}
+{"qid": "t33", "query": "nursing degree", "description": "A prospective student wants to know about KSU's nursing programs and how to be admitted."}
+{"qid": "t34", "query": "MBA", "description": "Someone wants to know which MBA programs KSU offers, such as full-time, executive, or online."}
+{"qid": "t35", "query": "cybersecurity degree", "description": "A prospective student wants information on cybersecurity degree programs."}
+{"qid": "t36", "query": "ESOL endorsement", "description": "A teacher wants to add an ESOL endorsement to their teaching certificate through KSU."}
+{"qid": "t37", "query": "machine learning research lab", "description": "A student wants to find research labs at KSU working on machine learning, computer vision, or AI."}
+{"qid": "t38", "query": "AI certificate course online", "description": "A working professional wants a short, online, non-degree certificate course on AI."}
+{"qid": "t39", "query": "strategic plan", "description": "A reader wants KSU's university strategic plan and its goals."}
+{"qid": "t40", "query": "who is the president of Kennesaw State", "description": "A visitor wants to know who the current university president is."}
+{"qid": "t41", "query": "rare book museum", "description": "A visitor wants information about the rare book collection and how to visit it."}
+{"qid": "t42", "query": "Holocaust museum", "description": "A visitor wants to know about the Museum of History and Holocaust Education."}
+{"qid": "t43", "query": "alumni benefits", "description": "A graduate wants to know what benefits and discounts alumni receive."}
+{"qid": "t44", "query": "make a donation", "description": "Someone wants to give money to KSU online."}
+{"qid": "t45", "query": "employee health benefits", "description": "A new employee wants to know what health insurance and other benefits KSU offers its staff."}
+{"qid": "t46", "query": "promotion and tenure", "description": "A faculty member wants the policies and timeline for annual review, promotion, and tenure."}
+{"qid": "t47", "query": "Talon One card", "description": "A student wants to get or replace their student ID card, or add KCash to it."}
+{"qid": "t48", "query": "where do I pick up packages", "description": "A student wants to know where to pick up mail and packages on campus."}
+{"qid": "t49", "query": "rent a venue on campus", "description": "An outside organization wants to rent a campus venue for an event."}
+{"qid": "t50", "query": "adult learners returning to college", "description": "An adult who left college wants to come back and finish a degree at KSU."}
+{"qid": "t51", "query": "counseling services", "description": "A student wants to see a counselor for mental health support."}
+{"qid": "t52", "query": "disability accommodations", "description": "A student with a disability wants to request academic accommodations."}
+{"qid": "t53", "query": "veterans", "description": "A military veteran wants the services and education benefits KSU offers to veterans."}
+{"qid": "t54", "query": "study abroad", "description": "A student wants to know about study abroad programs and how to take part."}
+{"qid": "t55", "query": "Marietta campus", "description": "A visitor wants information about the Marietta campus and what is located there."}
