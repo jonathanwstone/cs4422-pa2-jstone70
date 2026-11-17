@@ -1,7 +1,10 @@
 import json
 import collections
+import os
+import pickle
 from preprocess import  normalize_line, tokenize
 
+indexFile = "index.pkl"
 def load_corpus(path): # -> list of page dicts
     count = 0
     recordedLines = []
@@ -111,9 +114,19 @@ def build_index(pages, config):          # -> the index dict
             "stats" : stats,
             "config" : config}
 
-def save_index(index, out_dir):...
+def save_index(index, out_dir):
+    os.makedirs(out_dir, exist_ok= True)
+    path = os.path.join(out_dir, indexFile)
+    with open(path, "wb") as file:
+        pickle.dump(index,file)
 
-def load_index(out_dir):...
+    return path
+
+def load_index(out_dir):
+    os.makedirs(out_dir, exist_ok=True)
+    path = os.path.join(out_dir, indexFile)
+    with open(path, "rb") as file:
+        return pickle.load(file)
 
 def main(): ...
 
