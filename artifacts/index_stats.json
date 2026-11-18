@@ -5,7 +5,7 @@
   "num_terms": 37177,
   "num_postings": 643611,
   "index_bytes_on_disk": 24207134,
-  "build_seconds": 2.6446280479431152,
+  "build_seconds": 2.5891025066375732,
   "preprocessing": {
     "gap": 100,
     "stopwords": "nltk english",
